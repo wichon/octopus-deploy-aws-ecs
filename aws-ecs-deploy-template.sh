@@ -23,7 +23,7 @@ if [ $i -eq 6 ] ; then
     exit 1
 fi
 
-echo "Getting Active task defintion, and replacing the image name with the new one ..."
+echo "Getting Active task defintion, and replacing the image name with the new one, to later create a new task definition revision ..."
 taskDefinitionBody=$(aws ecs describe-task-definition --task-definition $taskDefinition | jq '.taskDefinition.containerDefinitions' | jq ".[].image = \"$dockerRepo:$dockerBuildTag\"")
 
 echo "Registering new task definition revision containing the generated image ..."
