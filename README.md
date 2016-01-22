@@ -1,6 +1,9 @@
 # octopus-deploy-aws-ecs
 Step Templates collection to deploy docker images to AWS ECS Cluster using [Octopus Deploy](https://octopus.com/)
 
+## Limitations
+This templates make the assumption that the task definition is composed of a single container image, for task definitions that are composed of multiple container images the step were the new task definition revision is created should be customized.
+
 ## Dependencies
 
 ### Octopus Server Depencies
