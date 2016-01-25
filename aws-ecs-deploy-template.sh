@@ -18,7 +18,7 @@ do
     sleep 30
 done
 
-if [ $i -eq 6 ] ; then
+if [ $i -eq 10 ] ; then
     echo "Error!, Could not find the Octopus Build image ($dockerBuildTag) in the Docker Hub registry, deployment to AWS ECS will not continue :(."
     exit 1
 fi
