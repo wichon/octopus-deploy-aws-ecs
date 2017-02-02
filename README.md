@@ -36,6 +36,7 @@ ECR
     * Service (ECS Cluster Service)
     * TaskDefinition (Task Definition family)
     * TaskDefinitionContainer (The name of the container inside the task definition that will be deployed)
+      * Can be empty for task definitions that only have one container.
     * EcrRepositoryUrl
     * EcrRepositoryName
     * DockerBuildTag (your custom Build tag text to identify the container)
